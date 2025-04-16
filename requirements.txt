@@ -4,3 +4,5 @@ langchain-chroma
 langchain-core
 ragas
 sacrebleu
+jupyterlab
+rouge_score
