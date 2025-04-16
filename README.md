@@ -6,14 +6,36 @@ A project created as a part of CS6120 - Natural Language Processing offered at t
 
 ## Prerequisites - 
 ### 1. Locally running setup of Ollama -
-We need a locally running instance of Ollama for downloading and running the models required for this project, which can then be used as an independent service. Ollama can be downloaded and installed from their official website - [Ollama Download](https://ollama.com/download)
+We need a locally running instance of Ollama for downloading and running the models required for this project, which can then be used as an independent service. Ollama can be downloaded and installed from their official website - [Ollama Download](https://ollama.com/download)<br><br>
+Download the required Ollama models by running the following commands -
+- `deepseek-r1:7b` - 
+```
+ollama pull deepseek-r1:7b
+```
+- `gemma3:1b` -
+```
+ollama pull gemma3:1b
+```
+- `gemma3:4b` -
+```
+ollama pull gemma3:4b
+```
+- `nomic-embed-text:latest` -
+```
+ollama pull nomic-embed-text:latest
+```
+- `granite-embedding:278m` -
+```
+ollama pull granite-embedding:278m
+```
+
 
 ### 2. Python Libraries/Dependencies -
 A `requirements.txt` file has been provided with all the necessary libraries needed. It is recommended to create a separate Conda environment for installing the dependencies to avoid any conflicts. Use the following command to install all the python dependencies in your environment:
 ```
 pip install -r requirements.txt
 ```
- 
+
 ## Instructions to Run -
 ### 1. Chunking the raw data -
 This repository contains the chunked data, and it is not compulsory to create the chunks again. However to create the chunks from scratch again please run the code provided in [`src/chunking.ipynb`](src/chunking.ipynb)
