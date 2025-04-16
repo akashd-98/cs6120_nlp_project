@@ -2,7 +2,9 @@ langchain
 langchain-ollama
 langchain-chroma
 langchain-core
+langchain-text-splitters
 ragas
 sacrebleu
 jupyterlab
 rouge_score
+pdfplumber
